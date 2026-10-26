@@ -7,9 +7,6 @@ Guide: Dr. Jolly Parikh. Team: Parikshat Singh, Venu Kulshreshtha, Sayyad Ahsan.
 L∞ perturbations (FGSM, PGD-20, SegPGD-20), and measure the degradation. No defences (those are
 Version 2).
 
-Results are in [`results/RESULTS_TABLES.md`](results/RESULTS_TABLES.md) (auto-generated) and
-[`Results_and_Verification.md`](Results_and_Verification.md) (written analysis and problem-statement
-check).
 
 ---
 
