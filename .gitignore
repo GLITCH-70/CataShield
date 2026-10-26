@@ -1,0 +1,141 @@
+# ==============================================================================
+# MicroProject 2026 - Cataract Segmentation & Robustness
+# Git Ignore Configuration for GitHub Upload
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Byte-compiled / Optimized / Cache Files
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 2. Datasets & Processed Annotations / Masks
+# (Cataract-1K dataset frames, Supervisely JSONs, and rasterized masks)
+# ------------------------------------------------------------------------------
+dataset/
+dataset_download/
+masks/
+masks_colored/
+data/
+raw_data/
+processed_data/
+
+# Archives & Large Data Blobs
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# ------------------------------------------------------------------------------
+# 3. Model Weights, Checkpoints & Training Runs
+# (Prevent pushing large .pth / .pt / tensorboard files > 100MB to GitHub)
+# ------------------------------------------------------------------------------
+runs/
+checkpoints/
+weights/
+saved_models/
+*.pth
+*.pt
+*.onnx
+*.ckpt
+*.h5
+*.tflite
+*.safetensors
+*.bin
+
+# ------------------------------------------------------------------------------
+# 4. Logs, Metric Trackers & Visual Dumps
+# ------------------------------------------------------------------------------
+*.log
+runs/**
+wandb/
+.tensorboard/
+events.out.tfevents.*
+
+# ------------------------------------------------------------------------------
+# 5. Virtual Environments & Package Managers
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.conda/
+
+# ------------------------------------------------------------------------------
+# 6. IDEs, Editors & OS System Files
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# ------------------------------------------------------------------------------
+# 7. Environment Variables & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.secret
+*.pem
+*.key
+
+# ------------------------------------------------------------------------------
+# 8. Temporary & Scratch Files
+# ------------------------------------------------------------------------------
+scratch/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# ------------------------------------------------------------------------------
+# 5. Local debug outputs (results/ itself is small and is meant to be committed,
+#    except the bulky qualitative arrays)
+# ------------------------------------------------------------------------------
+results_debug/
+results/qualitative/
+logs/
+
+# Resized-frame cache built by cataract_dataset.py
+cache/
+
+# Local tool binaries (LaTeX engine)
+tools/

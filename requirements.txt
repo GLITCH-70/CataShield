@@ -1,0 +1,12 @@
+# Cataract-1K adversarial robustness project (Version 1)
+# Tested with Python 3.12, torch 2.5.1+cu121, torchvision 0.20.1 on an RTX 3060 Laptop GPU (6 GB).
+# Install PyTorch with CUDA from https://pytorch.org first, e.g.
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24,<2.0
+scipy>=1.11
+pandas>=2.0
+Pillow>=9.5
+matplotlib>=3.7

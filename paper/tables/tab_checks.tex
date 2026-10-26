@@ -1,0 +1,25 @@
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\multicolumn{3}{@{}l}{\emph{(a) 8-bit quantisation of the adversarial frame}} \\
+mIoU (\%) & Float & 8-bit \\
+\midrule
+PGD-20, $\varepsilon$ = 1/255 & 4.35 & 4.09 \\
+PGD-20, $\varepsilon$ = 2/255 & 1.57 & 1.65 \\
+SegPGD-20, $\varepsilon$ = 1/255 & 3.88 & 3.75 \\
+SegPGD-20, $\varepsilon$ = 2/255 & 1.38 & 1.53 \\
+FGSM, $\varepsilon$ = 1/255 & 56.28 & 56.28 \\
+FGSM, $\varepsilon$ = 2/255 & 55.49 & 55.48 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{(b) Replication on an independent run}} \\
+Quantity & 908 frames & Full data \\
+\midrule
+Clean mIoU (\%) & 77.08 & 79.35 \\
+Noise 8/255: rel.\ fall (\%) & 10.3 & 5.2 \\
+FGSM 1/255: rel.\ fall (\%) & 34.0 & 29.1 \\
+PGD-20 1/255: rel.\ fall (\%) & 95.0 & 94.5 \\
+SegPGD-20 1/255: rel.\ fall (\%) & 95.1 & 95.1 \\
+FGSM 1/255: gap, pp (videos) & $+9.7$ (6/6) & $+11.8$ (6/6) \\
+PGD-20 $\frac{1}{4}$/255: gap, pp (videos) & $+8.7$ (4/6) & $+20.7$ (6/6) \\
+SegPGD-20 4/255: pupil share (\%) & 41.2 & 49.5 \\
+\bottomrule
+\end{tabular}

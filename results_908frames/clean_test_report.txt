@@ -1,0 +1,25 @@
+==============================================================================
+Clean test fold (Fold 1)
+==============================================================================
+Headline mIoU  77.08%   mDice  86.72%   (classes: Cornea, Pupil, Lens (IOL), Gauge, Capsulorhexis Forceps, Spatula, Phacoemulsification Tip, Irrigation-Aspiration, Lens Injector)
+  Anatomy      mIoU  83.04%   mDice  90.66%
+  Instruments  mIoU  74.10%   mDice  84.75%   (incl. rare: mIoU  64.94%)
+  All eval fg  mIoU  69.87%   Pixel accuracy  98.12%
+------------------------------------------------------------------------------
+ID  Class                     Group          IoU %   Dice %
+------------------------------------------------------------------------------
+ 0  Background                Background     98.76    99.37
+ 1  Cornea                    Anatomy        82.76    90.56
+ 2  Pupil                     Anatomy        89.23    94.31
+ 3  Lens (IOL)                Anatomy        77.14    87.09
+ 4  Slit/Incision Knife       Instrument*    74.92    85.66
+ 5  Gauge                     Instrument     54.60    70.64
+ 6  Capsulorhexis Cystotome   Instrument       n/a      n/a
+ 7  Capsulorhexis Forceps     Instrument     76.42    86.63
+ 8  Katena Forceps            Instrument*     0.00     0.00
+ 9  Spatula                   Instrument     70.83    82.93
+10  Phacoemulsification Tip   Instrument     79.45    88.55
+11  Irrigation-Aspiration     Instrument     84.03    91.32
+12  Lens Injector             Instrument     79.24    88.42
+------------------------------------------------------------------------------
+* rare class, excluded from headline means. n/a = absent from this split's ground truth.
