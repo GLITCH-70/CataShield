@@ -1,7 +1,8 @@
 # Adversarial Attack and Robustness Analysis of AI-Based Cataract Surgical Instrument Segmentation
 
 B.Tech CSE Micro-Project 2026, Bharati Vidyapeeth's College of Engineering (GGSIPU), New Delhi.
-Guide: Dr. Jolly Parikh. Team: Parikshat Singh, Venu Kulshreshtha, Sayyad Ahsan.
+Guide: Dr. Jolly Parikh. 
+Team: Parikshat Singh, Venu Kulshreshtha, Sayyad Ahsan.
 
 **Version 1 scope:** train a clean segmentation baseline on Cataract-1K, attack it with white-box
 L∞ perturbations (FGSM, PGD-20, SegPGD-20), and measure the degradation. No defences (those are
