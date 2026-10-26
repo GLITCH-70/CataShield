@@ -104,10 +104,8 @@ results_debug/
 *.xlsx
 *.xls
 
-# Generated paper figures
-paper/figures/*.pdf
-paper/figures/*.png
-paper/overleaf_upload.zip
+# Paper & publication folder
+paper/
 
 # ------------------------------------------------------------------------------
 # 8. LaTeX Auxiliary & Compilation Build Files
